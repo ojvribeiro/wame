@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Go to WAME</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+
+    <script src="./libs/jquery-3.5.1.min.js"></script>
+
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .pointer {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container-sm">
+      <!-- Content here -->
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Sisteminha daora</h5>
+
+          <div>
+            <div class="form-group">
+              <label for="operator">Operador</label>
+
+              <select class="form-control" id="operator">
+                <option value="Camila">Camila</option>
+                <option value="Victor">Victor</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="col">
+                <label for="phone">Telefone</label>
+                <input class="form-control" type="tel" id="phone" placeholder="91989142326" autofocus><br>
+              </div>
+  
+              <div class="col">
+                <label for="business">Empresa</label>
+                <input class="form-control" type="text" id="business" placeholder="Talento Design" value="Talento Design"><br>
+              </div>
+            </div>
+
+            <label for="name">Nome do cliente</label>
+            <input class="form-control" type="text" id="name" placeholder="Victor Ribeiro" value="Victor Ribeiro"><br>
+
+            <div class="form-row">
+              <div class="col">
+                <label for="text">Texto</label>
+                <textarea class="form-control" id="text" placeholder="Texto padrão" rows="8">Olá, {saudação}! Meu nome é {eu}, sou consultor da plataforma Amazônia Market (AMAR) do SEBRAE. Seu número está cadastrado na nossa plataforma como sendo do negócio *{empresa}*. Estou falando com *{nome}*?</textarea><br>
+              </div>
+
+              <div class="col">
+                <label for="result">Resultado</label>
+                <div id="result" class="p-3 mb-2 bg-light text-dark"></div>
+              </div>
+            </div>
+
+            <button type="button" id="submit" class="btn btn-primary">Enviar mensagem</button><br><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
